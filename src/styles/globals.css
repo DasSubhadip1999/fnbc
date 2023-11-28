@@ -1,0 +1,20 @@
+body {
+  width: 100vw;
+  height: 100dvh;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .auth-method-active {
+    @apply text-[#62248F] font-bold relative after:absolute after:left-0 after:bottom-0 after:w-full after:h-1 after:bg-[#62248F];
+  }
+  .input-group {
+    @apply flex flex-col gap-1;
+  }
+  .input-group > input {
+    @apply outline-none border-[rgba(0,0,0,0.4)] border rounded-md px-2 py-3;
+  }
+}
